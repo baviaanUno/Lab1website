@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: #F5F1DC;
+}
+
+.logo{
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.hamburg{
+    margin-left: 20em;
+    width: 4em;
+    margin-bottom: 1em;
+}
+
+.navd{
+    display: none;
+}
