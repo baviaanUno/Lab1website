@@ -22,3 +22,21 @@ nav{
 .navd{
     display: none;
 }
+
+.hero h1{
+  font-family: "Galada", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.5em;
+  padding-left: 0.3em;
+ line-height: 0.9em;
+}
+
+.hero{
+    display: flex;
+}
+.hero img{
+    width: 14em;
+    height: 10em;
+    margin-top: 1em;
+}
