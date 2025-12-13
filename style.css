@@ -18,7 +18,8 @@ nav{
 }
 
 .hamburg{
-    margin-left: 18.5em;
+    margin-left: 20em;
+    padding-right: 8px;
     width: 4em;
     margin-bottom: 1em;
 }
@@ -57,9 +58,128 @@ nav{
 .herotext p{
       width: 100%;
   max-width: 500px;
-  font-size: 1.5em;
+  font-size: 1.5em;   
+}
 
-  
+.button1{
+    display: flex;
+    width: 10em;
+    text-decoration: none;
+    background-color: #780116;
+    color: #F5F1DC;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3em;
+    border-radius: 2em;
+    font-size: 2em;
+}
 
-    
+.button2{
+    display: flex;
+    width: 10em;
+    text-decoration: none;
+    color: #780116;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3em;
+    border-radius: 2em;
+    border: 2px solid #780116;
+    font-size: 2em;
+}
+.herobutton{
+    display: grid;
+    gap: 1em;
+    justify-content: center;
+    padding-top: 1em;
+    padding-bottom: 4em;
+}
+.Over{
+    padding-top: 1em;
+    text-align: left;
+    padding-left: 1em;
+    background-color: #F5F1DC;
+}
+
+.Over h1{
+    text-align: center;
+font-family: "Galada", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4em;
+}
+
+.Over h2 {
+    font-family: "Galada", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3em;
+  color: #780116;
+  width: 100%;
+  max-width: 500px;
+}
+
+.Over p{
+ width: 100%;
+  max-width: 500px;
+    font-size: 1.5em;   
+}
+
+.img1{
+      width: 100%;
+  max-width: 400px;
+  padding-top: 1em;
+}
+.p2{
+    padding-bottom:2em;
+}
+
+.button3{
+        display: flex;
+    width: 10em;
+    text-decoration: none;
+    background-color: #780116;
+    color: #F5F1DC;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3em;
+    border-radius: 2em;
+    font-size: 2em;
+}
+
+.img2{
+          width: 100%;
+  max-width: 400px;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.Events h1{
+    text-align: center;
+font-family: "Galada", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4em;
+}
+
+.event{
+    background-color: #102022;
+    color: #F5F1DC;
+    display: grid;
+    border-radius: 1.8em;
+    justify-content: center;
+    padding-bottom: 4em;
+    align-self: center;
+}
+
+.eventt{
+        font-family: "Galada", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3em;
+  padding-left: 1em;
+}
+
+.event img{
+    width: 100%;
+    padding-left: 0;
 }
