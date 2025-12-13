@@ -1,10 +1,14 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: "brother-1816-printed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 nav{
     background-color: #F5F1DC;
+    position: fixed;
 }
 
 .logo{
@@ -14,7 +18,7 @@ nav{
 }
 
 .hamburg{
-    margin-left: 20em;
+    margin-left: 18.5em;
     width: 4em;
     margin-bottom: 1em;
 }
@@ -27,16 +31,35 @@ nav{
   font-family: "Galada", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 3.5em;
+  font-size: 4em;
   padding-left: 0.3em;
  line-height: 0.9em;
+ padding-top: 2.5em;
 }
 
 .hero{
     display: flex;
 }
 .hero img{
-    width: 14em;
-    height: 10em;
+    width: 15em;
+    height: 11em;
     margin-top: 1em;
+    padding-bottom: 1em;
+    padding-top: 6em;
+}
+
+.herotext{
+    display: flex;
+    justify-content:flex-start;
+    padding-left: 1em;
+}
+ 
+.herotext p{
+      width: 100%;
+  max-width: 500px;
+  font-size: 1.5em;
+
+  
+
+    
 }
