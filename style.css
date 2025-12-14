@@ -9,6 +9,7 @@ body{
 nav{
     background-color: #F5F1DC;
     position: fixed;
+      width: 100vw;
 }
 
 .logo{
@@ -18,6 +19,15 @@ nav{
 }
 #hamburger{
     display: none;
+}
+.close{
+    display: none;
+    width: 3em;
+    margin-bottom: 1em;
+    cursor: pointer;
+    position: fixed;
+    right: 2em;
+    top: 1.3em;
 }
 
 #hamburger:checked ~ .slideout {
@@ -63,11 +73,19 @@ nav{
 }
 
 .hamburg{
-    margin-left: 19em;
-    padding-right: 26px;
     width: 4em;
     margin-bottom: 1em;
     cursor: pointer;
+    position: fixed;
+    right: 2em;
+    padding-top: 1em;
+}
+#hamburger:checked + .menu-btn .hamburg {
+  display: none;
+}
+
+#hamburger:checked + .menu-btn .close {
+  display: block;
 }
 
 .navd{
@@ -93,6 +111,9 @@ nav{
     margin-top: 1em;
     padding-bottom: 1em;
     padding-top: 6em;
+}
+.heroimg2{
+    display: none;
 }
 
 .herotext{
@@ -175,6 +196,7 @@ font-family: "Galada", cursive;
  width: 100%;
   max-width: 500px;
     font-size: 1.5em;   
+    display: flex;
 }
 
 .img1{
@@ -353,7 +375,7 @@ font-family: "Galada", cursive;
     margin-top: 1.5em;
     align-self: center;
     background-color: #780116;
-    color: #fff;
+    color: #F5F1DC;
     border: none;
     padding: 0.6em 2em;
     font-size: 1.2em;
@@ -399,4 +421,294 @@ footer a{
     grid-template-columns: repeat(2, 1fr);
     gap: 2em;
     padding-bottom: 3em;
+}
+
+
+
+
+
+
+
+@media (min-width: 800px) {
+    .hero img{
+        width: auto;
+        height: 30em;
+    }
+  .hero h1 {
+    font-size: 5.5em;
+    padding-top: 1.5em;
+  }
+
+  .herotext {
+    justify-content: flex-start;
+    margin-left: 2em;
+  }
+
+  .herotext p {
+    max-width: 650px;
+    font-size: 1.6em;
+    line-height: 1.6;
+  }
+    .herobutton {
+    display: flex;
+    gap: 2em;
+    justify-content: flex-start;
+    margin-left: 2em;
+  }
+
+  .Over {
+  width: 100%;
+  padding: 2em 1em;
+}
+.Over h1{
+    font-size: 5.5em;
+}
+ .Over h2{
+    font-size: 4.5em;
+    max-width: 100%;
+ }
+.Over p {
+  max-width: 65ch;
+  margin-right: auto;
+  font-size: 1.6em;
+  line-height: 1.7;
+
+}
+.img1{
+    max-width: 600px;
+}
+.img2{
+    max-width: 600px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.event{
+    border-radius: 5em;
+}
+.eventp{
+    font-size: 1.6em;
+}
+.eventt{
+    font-size: 4em;
+}
+.Events h1{
+    font-size: 5.5em;
+}
+.register-form{
+    max-width: 600px;
+}
+.register-form a {
+   font-size: 2em;
+}
+.register-form label {
+    font-size: 1.8em;
+}
+.register-form input {
+    font-size: 1.8em;
+}
+.form-container h1 {
+    font-size: 5.5em;
+}
+footer{
+    display: flex;
+    justify-content: flex-start;
+    gap: 6em;
+}
+.icons{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 4em;
+}
+.linkz{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-size: 1.8em;
+}
+}
+@media (min-width: 1200px) {
+      .hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; 
+    padding: 4em 6em;
+    gap: 4em;
+  }
+
+  .herotext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+  }
+
+  .heroimage{
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 7em;                
+    margin: 0 0 0.5em 0;           
+    line-height: 1.1;
+  }
+
+  .herotext p {
+    font-size: 1.8em;
+    line-height: 1.8;
+    margin: 0;
+    max-width: 60%;
+  }
+
+  .herobutton {
+    margin-top: 2em;               
+    justify-content: flex-start;  
+    gap: 2em;
+  }
+  .hamburg{
+    display: none;
+  }
+  .navd{
+    display: flex;
+    position: absolute;
+    right: 4em;
+    top: 1.5em;
+    gap: 3em;
+  }
+  .toplink{
+      text-decoration: none;
+   color: #780116;
+   font-size: 1.8em;
+   padding-top: 0.2em;
+  }
+  .toplinkb{
+    font-size: 1.8em;
+    text-decoration: none;
+    color: #F5F1DC;
+    background-color: #780116;
+    border-radius: 1em;
+     padding: 0.2em 2em; 
+  }
+  .toplinkb:hover{
+    transform: scale(1.05);
+}
+
+  .heroimage {
+    display: none;
+  }
+
+  .herotext {
+    display: flex;
+    flex-direction: row; 
+    gap: 2em;            
+    align-items: flex-start; 
+  }
+
+ 
+  .herotext p {
+    flex: 1;
+    font-size: 1.8em;
+    line-height: 1.8;
+    margin: 0;
+  }
+
+  .heroimg2 {
+    display: block;      
+    max-width: 40%;      
+    height: auto;
+  }
+
+    .herobutton {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-top: 2em;
+        padding-left: 10em;
+    }
+    .block{
+        display: flex;
+    }
+    .img1{
+        width: 40%;
+        height: 20em;
+        margin-top: 15em;
+    }
+    .img2{
+        width: 40%;
+        height: 50em;
+        margin-top: 10em;
+    }
+    .event {
+        flex-direction: row;
+        align-items: center;
+        background-color: #102022;
+        border-radius: 2.5em;
+        padding: 2em;
+        gap: 2em;
+    }
+
+    .event img {
+        order: 2;
+        width: 45%;
+        max-width: 100%;
+        border-radius: 2em;
+        object-fit: cover;
+        height: auto;
+    }
+
+    .eventt, .eventp {
+        order: 1; 
+        width: 55%;
+    }
+
+    .eventt {
+        font-size: 3em; 
+        padding-bottom: 1em;
+    }
+
+    .eventp {
+        font-size: 1.8em;
+        line-height: 1.5;
+    }
+    footer {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start; 
+        padding: 2em 6em;
+        gap: 2em; 
+        position: relative;
+    }
+
+    .icons {
+        flex: 0 0 auto; 
+    }
+
+
+    .linkz {
+        flex: 1;
+        display: grid;
+        grid-template-columns: repeat(2, auto); 
+        grid-template-rows: repeat(3, auto);   
+        justify-content: center; 
+        gap: 1em 3em; 
+    }
+
+    .linkz a {
+        display: block;
+        text-align: center;
+}
+    .Over {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        text-align:left;
+        padding: 4em 6em; 
+    }
+    .eventp{
+        padding-left: 0;
+    }
+    
 }
