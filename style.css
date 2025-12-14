@@ -16,12 +16,58 @@ nav{
     padding-top: 1em;
     padding-bottom: 1em;
 }
+#hamburger{
+    display: none;
+}
+
+#hamburger:checked ~ .slideout {
+    transform: translateX(0);
+}
+
+.navh{
+        text-decoration: none;
+    color:#780116;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1em 1em;
+    display: block;
+    text-align: right;
+    border-bottom: 1px solid #eee
+}
+
+.button55{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+}
+
+.button5{
+ 
+    text-decoration: none;
+    background-color: #780116;
+    color: #F5F1DC;
+    padding: 0.4em 1.5em;
+    border-radius: 2em;
+    font-size: 1.4em;
+    display: inline-flex;
+    align-items: center;
+}
+.slideout{
+    background-color: #F5F1DC;
+    position: absolute;
+    width:100%;
+    transform: translateX(100%);
+    transition: all 0.2s ease-in;
+    align-items: right;
+    justify-content: right;
+}
 
 .hamburg{
-    margin-left: 20em;
-    padding-right: 8px;
+    margin-left: 19em;
+    padding-right: 26px;
     width: 4em;
     margin-bottom: 1em;
+    cursor: pointer;
 }
 
 .navd{
@@ -74,6 +120,10 @@ nav{
     font-size: 2em;
 }
 
+.button1:hover {
+    transform: scale(1.05);
+}
+
 .button2{
     display: flex;
     width: 10em;
@@ -85,6 +135,9 @@ nav{
     border-radius: 2em;
     border: 2px solid #780116;
     font-size: 2em;
+}
+.button2:hover{
+    transform: scale(1.05);
 }
 .herobutton{
     display: grid;
@@ -146,6 +199,10 @@ font-family: "Galada", cursive;
     font-size: 2em;
 }
 
+.button3:hover{
+    transform: scale(1.05);
+}
+
 .img2{
           width: 100%;
   max-width: 400px;
@@ -161,25 +218,185 @@ font-family: "Galada", cursive;
   font-size: 4em;
 }
 
-.event{
+
+.Events {
+    text-align: center;
+    padding-bottom: 4em;
+}
+
+.eve {
+    display: grid;
+    gap: 3em; 
+    padding: 2em;
+}
+
+.event {
     background-color: #102022;
     color: #F5F1DC;
-    display: grid;
-    border-radius: 1.8em;
-    justify-content: center;
-    padding-bottom: 4em;
-    align-self: center;
+    border-radius: 2.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-bottom: 3em;
 }
 
-.eventt{
-        font-family: "Galada", cursive;
+.event img {
+    width: 100%;
+    max-width: 1000px;
+    border-top-left-radius: 2.5em;
+    border-top-right-radius: 2.5em;
+}
+
+.eventt {
+    font-family: "Galada", cursive;
+    font-size: 3em;
+    padding: 1em;
+    line-height: 1.2em;
+    text-align: left;
+}
+
+.eventp {
+    font-size: 1.5em;
+    padding-left: 2em;
+    padding-bottom: 1em;
+    text-align: left;
+    padding-right: 1em;
+}
+
+.button4{
+    display: flex;
+    width: 10em;
+    text-decoration: none;
+    background-color: #780116;
+    color: #F5F1DC;
+    justify-content: center;
+    padding: 0.3em;
+    border-radius: 2em;
+    font-size: 2em;
+}
+.button4:hover{
+    transform: scale(1.05);
+}
+.seemore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5em;
+}
+.Merch{
+    background-color: #F5F1DC;
+    padding-top: 1em;
+}
+.Merch h1{
+        text-align: center;
+font-family: "Galada", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 3em;
-  padding-left: 1em;
+  font-size: 4em;
 }
 
-.event img{
+.carousel{
+        display: flex;
+    gap: 2em;
+    overflow-x: auto;
+    padding: 2em;
+    scroll-snap-type: x mandatory;
+}
+
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em 1em;
+}
+
+.form-container h1 {
+        text-align: center;
+font-family: "Galada", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4em;
+}
+
+
+.register-form {
     width: 100%;
-    padding-left: 0;
+    max-width: 350px;
+    border: 2px solid #780116;
+    border-radius: 2.5em;
+    padding: 2.5em 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.register-form label {
+    font-size: 1em;
+}
+
+.register-form input {
+    border: none;
+    border-bottom: 2px solid #c98b95;
+    padding: 0.5em 0;
+    font-size: 1em;
+    background: transparent;
+}
+
+.register-form input:focus {
+    outline: none;
+    border-bottom-color: #780116;
+}
+
+.register-form a {
+    text-decoration: none;
+    margin-top: 1.5em;
+    align-self: center;
+    background-color: #780116;
+    color: #fff;
+    border: none;
+    padding: 0.6em 2em;
+    font-size: 1.2em;
+    border-radius: 2em;
+    cursor: pointer;
+
+}
+
+.register-form a:hover {
+    transform: scale(1.05);
+}
+
+footer{
+    background-color: #F5F1DC;
+    border-radius: 2em;
+    display: grid;
+    justify-content: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: #780116;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.socials img{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    width: 4em;
+}
+.socials{
+    display: flex;
+    gap: 3em;
+}
+.logof{
+    width: 20em;
+    padding-top: 4em;
+}
+
+.linkz{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    padding-bottom: 3em;
 }

@@ -17,7 +17,18 @@
         <a class="navd" href="#">Over</a>
         <a class="navd" href="#">Events</a>
         <a class="navd" href="#">Registreer</a>
+        <input type="checkbox" id="hamburger">
+        <label for="hamburger">
         <img class="hamburg" src="clubfritique images/hamburg.svg" alt="hamburg">
+        </label>
+        <div class="slideout">
+        <a class="navh" href="#">Home</a>
+        <a class="navh" href="#">Over</a>
+        <a class="navh" href="#">Events</a>
+        <div class="button55">
+        <a class="navh button5" href="#">Registreer</a>
+        </div>
+        </div>
     </nav>
     <div>
         <div class="hero">
@@ -44,104 +55,116 @@
         <a class="button3" href="#">Download</a>
         <img class="img2" src="clubfritique images/home2-left.webp" alt="mockup">
     </div>
-    <div class="Events">
-        <h1>Events</h1>
-        <table>
-            <tr class="event">
-                <td>
-                    <img src="clubfritique images/crunchoff.webp" alt="greatcrunchoff">
-                </td>
-                <td class="eventt">
-                    Date:
-                    xx/xx/xx
-                    Event: 
-                    The great crunch off
-                </td>
-                <td>
-                    Kom naar onze eerste proefavond en ontdek de
-                    lekkerste frituursnacks. via onze app beoordeel je de snacks en de resultaten worden op een groot scherm aangetoont. 
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="clubfritique images/weekly.webp" alt="weeklysnack">
-                </td>
-                <td>
-                    Date:
-                    Weekly
-                    Event: 
-                    Snackrate update
-                </td>
-                <td>
-                    Elke vrijdag worden onze scoreboards bijgewerkt met alle snacks die die week zijn gereviewd.
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="clubfritique images/snackmeet.webp" alt="snackmeet">
-                </td>
-                <td>
-                    Date:
-                    Monthly
-                    Event: 
-                    Snackmeet
-                </td>
-                <td>
-                    Elke maand komen wij samen om een gezamenlijke review meetup te doen waarbij we samen snacks proeven en reviewen.
-                </td>
-            </tr>
-        </table>
-        <a href="#">See more</a>
+<div class="Events">
+    <h1>Events</h1>
+
+    <div class="eve">
+        <div class="event">
+            <img src="clubfritique images/crunchoff.webp" alt="great crunch off">
+
+            <div class="eventt">
+                Date:<br>
+                xx/xx/xx<br>
+                Event:<br>
+                The Great Crunch Off
+            </div>
+
+            <div class="eventp">
+                Kom naar onze eerste proefavond en ontdek de
+                lekkerste frituursnacks. Via onze app beoordeel je
+                de snacks en de resultaten worden op een groot scherm getoond.
+            </div>
+        </div>
+
+        <div class="event">
+            <img src="clubfritique images/weekly.webp" alt="weekly snack">
+
+            <div class="eventt">
+                Date:<br>
+                Weekly<br>
+                Event:<br>
+                Snackrate Update
+            </div>
+
+            <div class="eventp">
+                Elke vrijdag worden onze scoreboards bijgewerkt
+                met alle snacks die die week zijn gereviewd.
+            </div>
+        </div>
+
+        <div class="event">
+            <img src="clubfritique images/snackmeet.webp" alt="snackmeet">
+
+            <div class="eventt">
+                Date:<br>
+                Monthly<br>
+                Event:<br>
+                Snackmeet
+            </div>
+
+            <div class="eventp">
+                Elke maand komen wij samen om een gezamenlijke
+                review meetup te doen waarbij we samen snacks
+                proeven en reviewen.
+            </div>
+        </div>
     </div>
-    <div>
+</div>
+<div class="seemore">
+    <a class="button4" href="#">See more</a>
+</div>
+    <div class="Merch">
         <h1>Merch</h1>
+        <div class="carousel" id="carousel">
         <img src="clubfritique images/stickers.webp" alt="stickers">
         <img src="clubfritique images/cards.webp" alt="cards">
         <img src="clubfritique images/notebook.webp" alt="notebook">
         <img src="clubfritique images/rugzak.webp" alt="rugzak">
         <img src="clubfritique images/wipes.webp" alt="wipes">
+        </div>
+    
+    </div>
+    <div class="form-container">
+    <h1>Registreer</h1>
+    <form class="register-form">
+        <label for="Naam">Naam</label>
+        <input type="text" id="Naam" required>
+
+        <label for="Voornaam">Voornaam</label>
+        <input type="text" id="Voornaam" required>
+
+        <label for="Gebruikersnaam">Gebruikersnaam</label>
+        <input type="text" id="Gebruikersnaam" required>
+
+        <label for="Email">Email</label>
+        <input type="email" id="Email" required>
+
+        <label for="Wachtwoord">Wachtwoord</label>
+        <input type="password" id="Wachtwoord" required>
+
+        <label for="Herhaal">Herhaal je wachtwoord</label>
+        <input type="password" id="Herhaal" required>
+
+        <a href="#">Registrer</a>
+    </form>
     </div>
 
-    <form action="#">
-        <label for="Naam">Naam</label><br>
-        <input type="text" id="Naam" name="Naam" required><br><br>
-        <label for="Voornaam">Voornaam</label><br>
-        <input type="text" id="Voornaam" name="Voornaam" required><br><br>
-        <label for="Gebruikersnaam">Gebruikersnaam</label><br>
-        <input type="text" id="Gebruikersnaam" name="Gebruikersnaam" required><br><br>
-        <label for="Email">Email</label><br>
-        <input type="text" id="Email" name="Email" required><br><br>
-        <label for="Wachtwoord">Wachtwoord</label><br>
-        <input type="text" name="Wachtwoord" id="Wachtwoord" required><br><br>
-        <label for="Herhaal je wachtwoord">Herhaal je wachtwoord</label><br>
-        <input type="text" name="Herhaal je wachtwoord" id="Herhaal" required><br><br>
-        <a href="#">Registreer</a>
-    </form>
-
     <footer>
-        <img src="clubfritique images/logo.svg" alt="logo">
-        <table>
-            <tr>
-                <td>
+        <img class="logof" src="clubfritique images/logo.svg" alt="logo">
+        <div class="socials">
                     <img src="clubfritique images/Insta.svg" alt="Insta">
-                </td>
-                <td>
                     <img src="clubfritique images/facebook.svg" alt="facebook">
-                </td>
-                <td>
                     <img src="clubfritique images/Youtube.svg" alt="Youtube">
-                </td>
-                <td>
                     <img src="clubfritique images/tiktok.svg" alt="tiktok">
-                </td>
-            </tr>
-        </table>
+                    </div>
         <h3>ClubFritique@gmail.com</h3>
+        <div class="linkz">
         <a href="#">Home</a>
         <a href="#">Login</a>
         <a href="#">Over</a>
         <a href="#">Registreer</a>
         <a href="#">Events</a>
+        </div>
     </footer>
 
 </body>
